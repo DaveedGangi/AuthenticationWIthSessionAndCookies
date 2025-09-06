@@ -28,7 +28,6 @@ const Dashboard=()=>{
 
    const logout=async()=>{
     await api.post("/logout",{},{withCredentials:true});
-    localStorage.removeItem("isAuthenticated");
     window.location.href="/login-signup";
    }
 
